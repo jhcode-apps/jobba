@@ -9,9 +9,11 @@ Jobba
 
 ## Short description
 
-<!-- Max 80 characters. Currently 79. -->
+<!-- Max 80 characters. Currently 77. -->
+<!-- Policy note: must not contain price/promo wording ("free", "no ads") —
+     Google flagged an earlier version for exactly this. -->
 
-Track work hours with one tap. Offline, no ads, no account. Your data is yours.
+Track work hours with one tap. Fully offline and private. Your data is yours.
 
 ## Full description
 
