@@ -55,3 +55,11 @@ Privacy policy: https://jhcode-apps.github.io/jobba/privacy-policy
 - Data safety: no data collected, no data shared
 - Contact email: jhcode@protonmail.com
 - Privacy policy URL: https://jhcode-apps.github.io/jobba/privacy-policy
+
+## Screenshots
+
+> ⚠️ **OUTDATED — do not upload as-is.** The screenshots in `assets/screenshots/`
+> (phone, `tablet7/`, `tablet10/`) were captured on the old indigo/purple theme,
+> before the teal color scheme shipped in **1.1.0**. They no longer match the app.
+> Recapture all of them on a 1.1.0+ build before refreshing the Play listing.
+> See the capture workflow in the store-screenshots notes.
