@@ -58,8 +58,7 @@ Privacy policy: https://jhcode-apps.github.io/jobba/privacy-policy
 
 ## Screenshots
 
-> ⚠️ **OUTDATED — do not upload as-is.** The screenshots in `assets/screenshots/`
-> (phone, `tablet7/`, `tablet10/`) were captured on the old indigo/purple theme,
-> before the teal color scheme shipped in **1.1.0**. They no longer match the app.
-> Recapture all of them on a 1.1.0+ build before refreshing the Play listing.
-> See the capture workflow in the store-screenshots notes.
+Current set in `assets/screenshots/` was captured on **1.1.x** (teal theme, light mode,
+English/UK): phone (`01`–`05`), `tablet7/` (1200×1920), `tablet10/` (1600×2560).
+Recapture in **light mode + English (UK country)** after any visual change — see the
+store-screenshots capture notes.
