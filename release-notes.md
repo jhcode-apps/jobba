@@ -13,6 +13,34 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.1.1 — tracker polish
+
+Small UI refinements since 1.1.0: a compact "today" chip and a slimmer timer card.
+
+### English (`en-US`)
+
+```
+What's new in 1.1.1
+
+• A quicker way back to today — a compact "Today" button now appears when you're viewing another day.
+• Tidier timer view — a slimmer card so more of your sessions fit on screen.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.1.1
+
+• Snabbare väg tillbaka till idag — en kompakt "Idag"-knapp visas nu när du tittar på en annan dag.
+• Renare timervy — ett smalare kort så att fler arbetspass får plats på skärmen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.1.0 — new teal look
 
 Only user-facing change since 1.0.0 is the teal light/dark color scheme.
