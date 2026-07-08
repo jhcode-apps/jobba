@@ -13,6 +13,32 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.1.0 — new teal look
+
+Only user-facing change since 1.0.0 is the teal light/dark color scheme.
+
+### English (`en-US`)
+
+```
+What's new in 1.1.0
+
+• A fresh new look — Jobba now wears a teal theme built around the app icon, in both light and dark mode.
+
+Thanks for testing! As always, please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.1.0
+
+• Ett fräscht nytt utseende — Jobba har fått ett blågrönt tema baserat på appikonen, i både ljust och mörkt läge.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.0.0 — closed testing debut
 
 First build on Play. Notes introduce the app rather than list changes, since
