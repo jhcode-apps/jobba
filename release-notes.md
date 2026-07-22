@@ -13,6 +13,38 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.2.0 — notes at a glance
+
+The user-facing change since 1.1.1 is the Summary notes indicator: days with a
+day or session note now show a note icon. Also targets Android 16 (API 36) to
+meet Play's target-API requirement — noted briefly for testers, not detailed.
+
+### English (`en-US`)
+
+```
+What's new in 1.2.0
+
+• Spot notes at a glance — the Summary now shows a note icon on any day that has a day note or a session note, so you can find them without opening each day.
+
+Also updated for the latest Android version.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.2.0
+
+• Se anteckningar direkt — Översikten visar nu en anteckningsikon på dagar med en dags- eller arbetspassanteckning, så att du hittar dem utan att öppna varje dag.
+
+Även uppdaterad för den senaste Android-versionen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.1.1 — tracker polish
 
 Small UI refinements since 1.1.0: a compact "today" chip and a slimmer timer card.
