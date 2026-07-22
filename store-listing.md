@@ -59,11 +59,8 @@ Privacy policy: https://jhcode-apps.github.io/jobba/privacy-policy
 
 ## Screenshots
 
-Current set in `assets/screenshots/` was captured on **1.1.x** (teal theme, light mode,
-English/UK): phone (`01`–`05`), `tablet7/` (1200×1920), `tablet10/` (1600×2560).
+Set in `assets/screenshots/` (teal theme, light mode, English/UK): phone (`01`–`05`),
+`tablet7/` (1200×1920), `tablet10/` (1600×2560). Most were captured on **1.1.x**;
+`02-summary.png` was recaptured on **1.2.0** and shows the note icon on the 08/07 day.
 Recapture in **light mode + English (UK country)** after any visual change — see the
 store-screenshots capture notes.
-
-1.2.0 added a note icon on Summary days that have a note. The current screenshots
-predate it; recapture the Summary shot (on a day with a note) if you want the
-listing to show the indicator — otherwise the existing set is still accurate.
