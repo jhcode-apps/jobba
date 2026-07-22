@@ -17,7 +17,7 @@ Track work hours with one tap. Fully offline and private. Your data is yours.
 
 ## Full description
 
-<!-- Max 4000 characters. Currently ~1600. -->
+<!-- Max 4000 characters. Currently ~1700. -->
 
 Jobba is a simple, fast time tracker for your working day. Clock in with one tap, watch your hours add up live, and get clean weekly and monthly summaries — with no ads, no account, and no internet connection required.
 
@@ -26,11 +26,12 @@ TRACK YOUR DAY
 • Multiple sessions per day, with manual add and edit for the ones you forgot
 • Swipe between days or jump anywhere with the calendar
 • Automatic lunch deduction: set a default break and the time of day it applies
-• Add a note to any day
+• Add a note to any day, or to an individual session
 • Get a reminder if you forget to stop an unusually long session
 
 UNDERSTAND YOUR HOURS
 • Weekly and monthly summaries with totals, averages, and per-day breakdowns
+• See which days have notes at a glance — they're flagged right in the summary
 • ISO week numbers and Monday-start weeks
 • Public holidays shown for your country — computed on the device
 • Time and date formats follow your device settings, or set your own
@@ -62,3 +63,7 @@ Current set in `assets/screenshots/` was captured on **1.1.x** (teal theme, ligh
 English/UK): phone (`01`–`05`), `tablet7/` (1200×1920), `tablet10/` (1600×2560).
 Recapture in **light mode + English (UK country)** after any visual change — see the
 store-screenshots capture notes.
+
+1.2.0 added a note icon on Summary days that have a note. The current screenshots
+predate it; recapture the Summary shot (on a day with a note) if you want the
+listing to show the indicator — otherwise the existing set is still accurate.
