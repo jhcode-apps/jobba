@@ -13,6 +13,34 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.2.1 — Android 15 compatibility
+
+No user-facing changes. Bumps androidx.activity so edge-to-edge no longer
+uses APIs deprecated on Android 15 (API 35), clearing two Play Console
+warnings. Notes kept minimal since testers see nothing different.
+
+### English (`en-US`)
+
+```
+What's new in 1.2.1
+
+• Under-the-hood fixes so Jobba displays correctly on Android 15 and newer. No changes to how the app works.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.2.1
+
+• Fixar under huven så att Jobba visas korrekt på Android 15 och senare. Inga ändringar i hur appen fungerar.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.2.0 — notes at a glance
 
 The user-facing change since 1.1.1 is the Summary notes indicator: days with a
