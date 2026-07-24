@@ -13,6 +13,36 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.3.0 — smarter automatic backups
+
+The user-facing change since 1.2.1 is activity-gated scheduled backups: an
+automatic backup now writes only when your data has actually changed since the
+last one, so idle days stop overwriting the backup file (and stop triggering
+needless cloud syncs). The "Last backup" settings row is relabeled "Backup up
+to date" to match, and stays fresh even on days nothing is written.
+
+### English (`en-US`)
+
+```
+What's new in 1.3.0
+
+• Smarter automatic backups — a scheduled backup now saves only when your data has changed since the last one, so idle days no longer overwrite your backup file. Settings shows when your backup is up to date.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.3.0
+
+• Smartare automatiska säkerhetskopior — en schemalagd säkerhetskopia sparas nu bara när dina data har ändrats sedan förra gången, så lediga dagar skriver inte längre över din säkerhetskopia. Inställningarna visar när säkerhetskopian är aktuell.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.2.1 — Android 15 compatibility
 
 No user-facing changes. Bumps androidx.activity so edge-to-edge no longer
