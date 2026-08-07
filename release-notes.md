@@ -13,6 +13,49 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.4.0 — simpler deleting, themed icon
+
+Feature release. Swipe-to-delete is gone from session cards: it duplicated the
+delete button already on every card, and because the day list sits inside the
+Tracker's horizontal pager, the swipe gesture was intercepting drags meant for
+day navigation. Deleting is unchanged otherwise — same button, same confirm
+dialog. The launcher icon gains a monochrome layer, so it participates in
+Android 13+ themed icons. Counted strings now use proper plurals, fixing
+"1 dagar" / "1 days" on single-day imports. Resource shrinking cuts the
+download by roughly 13%.
+
+Not called out in the notes: the battery-optimization "Fix" button now opens
+the system battery-optimization list instead of the one-tap dialog, required by
+Play policy. Add a bullet if you'd rather flag it.
+
+### English (`en-US`)
+
+```
+What's new in 1.4.0
+
+• Swiping a session no longer deletes it — use the delete button on the card. Swiping now moves between days reliably, wherever you start it.
+• Themed icon — on Android 13 and later, Jobba's icon can follow your wallpaper colours.
+• Correct singular wording, so imports read "1 day" instead of "1 days".
+• Smaller download.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.4.0
+
+• Att svepa på ett arbetspass tar inte längre bort det — använd papperskorgen på kortet. Svep byter nu dag på ett tillförlitligt sätt, var du än börjar.
+• Temafärgad ikon — på Android 13 och senare kan Jobbas ikon följa bakgrundsbildens färger.
+• Rätt singularform, så att import visar "1 dag" i stället för "1 dagar".
+• Mindre nedladdning.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.3.1 — clearer backup failure alerts
 
 Bugfix release. When a scheduled backup can't reach its saved location — the
