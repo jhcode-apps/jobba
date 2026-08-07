@@ -13,6 +13,42 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.4.1 — safer backup setup
+
+Bugfix release. Choosing a backup location used to run a backup the moment you
+picked it. Because the picker creates or selects a *file*, and the write opens
+it truncating, that could replace a backup already saved at that location with
+whatever was on the device — on a fresh install, an empty database. Joel hit
+exactly this: configuring backup before importing his old file. Selection now
+only records the location; backups happen via "Run Backup Now" or the schedule.
+
+Changing location also clears the recorded last-backup fingerprint, so the
+scheduled worker cannot mistake "data unchanged" for "already backed up here"
+and skip writing to the new destination. Side effect: "Last backup" reads
+"Never" until the first real backup to that location, which is accurate.
+
+### English (`en-US`)
+
+```
+What's new in 1.4.1
+
+• Choosing a backup location no longer writes a backup straight away. It could overwrite a backup file already saved there — on a fresh install, with an empty one. Back up when you mean to, with "Run Backup Now" or on your schedule.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.4.1
+
+• Att välja plats för säkerhetskopiering skapar inte längre en kopia direkt. Det kunde skriva över en befintlig säkerhetskopia på platsen — vid nyinstallation med en tom. Säkerhetskopiera när du vill, med "Säkerhetskopiera nu" eller enligt ditt schema.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.4.0 — simpler deleting, themed icon
 
 Feature release. Swipe-to-delete is gone from session cards: it duplicated the
