@@ -22,6 +22,11 @@ whatever was on the device — on a fresh install, an empty database. Joel hit
 exactly this: configuring backup before importing his old file. Selection now
 only records the location; backups happen via "Run Backup Now" or the schedule.
 
+Also removes the "File name" field from Settings. It only ever pre-filled the
+picker and rendered itself — backups always went to the chosen document URI —
+so renaming in the picker left Settings showing two different names for one
+file. The location row already shows the real name.
+
 Changing location also clears the recorded last-backup fingerprint, so the
 scheduled worker cannot mistake "data unchanged" for "already backed up here"
 and skip writing to the new destination. Side effect: "Last backup" reads
@@ -33,6 +38,7 @@ and skip writing to the new destination. Side effect: "Last backup" reads
 What's new in 1.4.1
 
 • Choosing a backup location no longer writes a backup straight away. It could overwrite a backup file already saved there — on a fresh install, with an empty one. Back up when you mean to, with "Run Backup Now" or on your schedule.
+• The backup file name is now chosen in the location picker only. The separate "File name" box is gone — it never affected where backups were actually saved.
 
 Thanks for testing! Please report anything that looks off.
 ```
@@ -43,6 +49,7 @@ Thanks for testing! Please report anything that looks off.
 Nyheter i 1.4.1
 
 • Att välja plats för säkerhetskopiering skapar inte längre en kopia direkt. Det kunde skriva över en befintlig säkerhetskopia på platsen — vid nyinstallation med en tom. Säkerhetskopiera när du vill, med "Säkerhetskopiera nu" eller enligt ditt schema.
+• Filnamnet väljs nu bara i platsväljaren. Den separata rutan "Filnamn" är borttagen — den påverkade ändå aldrig var säkerhetskopiorna sparades.
 
 Tack för att du testar! Rapportera gärna om något ser fel ut.
 ```
