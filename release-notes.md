@@ -13,6 +13,37 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.3.1 — clearer backup failure alerts
+
+Bugfix release. When a scheduled backup can't reach its saved location — the
+cloud app was signed out or updated, removable storage was unmounted, or the
+file/permission was removed — Jobba previously showed a cryptic "No content
+provider" error that gave no hint what to do. It now shows a plain-language
+notification and taps straight into Settings so you can re-select where backups
+are saved.
+
+### English (`en-US`)
+
+```
+What's new in 1.3.1
+
+• Clearer backup errors — if a scheduled backup can't reach its saved location (for example, the cloud app was signed out), Jobba now shows a plain-language notification and taps straight to Settings so you can re-select where backups are saved.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.3.1
+
+• Tydligare fel vid säkerhetskopiering — om en schemalagd säkerhetskopia inte når sin sparade plats (t.ex. om molnappen loggats ut) visar Jobba nu en avisering i klartext och tar dig direkt till Inställningar så att du kan välja var säkerhetskopior sparas igen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.3.0 — smarter automatic backups
 
 The user-facing change since 1.2.1 is activity-gated scheduled backups: an
