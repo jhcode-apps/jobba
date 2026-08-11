@@ -13,6 +13,48 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.5.0 — language, holidays, and a clearer summary
+
+Feature release. The country setting used to decide three things at once:
+which holidays apply, which date and time formats are suggested, and the
+language of day and month names. That last one was unintended and meant an
+English app with Sweden selected rendered "tisdag" beside English text, with
+no way to separate them. Names now follow the app's language; country keeps
+driving holidays and formats.
+
+The summary screen also had a real contrast bug: in light theme the week
+cards resolved to within about 1 shade of the background and were effectively
+invisible. They now use a surface that stands out in both themes. Stat card
+colour and the spacing between the totals row and the week list were reworked
+at the same time, and a ripple that drew square corners outside the rounded
+card shape on tap was fixed.
+
+### English (`en-US`)
+
+```
+What's new in 1.5.0
+
+• Day and month names now follow the app's language, so you can run Jobba in English and still get Swedish holidays and date formats.
+• Summary redesign — week cards are properly visible in light theme, and the spacing between the totals and the weeks is clearer.
+• Tidier backup settings text.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.5.0
+
+• Namn på dagar och månader följer nu appens språk, så du kan köra Jobba på engelska och ändå få svenska helgdagar och datumformat.
+• Nytt utseende i Översikt — veckokorten syns ordentligt i ljust tema och avståndet mellan totalerna och veckorna är tydligare.
+• Snyggare texter i inställningarna för säkerhetskopiering.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.4.1 — safer backup setup
 
 Bugfix release. Choosing a backup location used to run a backup the moment you
