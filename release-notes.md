@@ -13,6 +13,37 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.5.1 — consistent card styling
+
+Follow-up to 1.5.0. The summary week cards used surfaceBright while the tracker
+session cards take Material's default surfaceContainerHighest. Those two roles
+sit close together at the light end of the palette but far apart at the dark
+end, so the mismatch was invisible in light theme and obvious in dark. Week
+cards now use the same role, at a small cost in contrast against the background
+that still leaves them far clearer than before 1.5.0.
+
+### English (`en-US`)
+
+```
+What's new in 1.5.1
+
+• Visual polish — the summary and timer screens now use matching card styling.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.5.1
+
+• Visuell putsning — Översikt och Timer använder nu samma kortutseende.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.5.0 — language, holidays, and a clearer summary
 
 Feature release. The country setting used to decide three things at once:
