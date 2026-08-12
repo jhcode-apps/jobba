@@ -13,6 +13,46 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.5.3 — stuck session notification, portrait lock
+
+Two fixes found while testing 1.5.2.
+
+The ongoing-session notification could be left posted and counting after a
+session was stopped, with nothing running in the app. Cancelling ran upstream of
+the collector that posts, so an emission carrying the day's updated totals could
+already be queued when the session ended and land *after* the cancel, re-posting
+a notification nothing was left to clear. Seen on Joel's phone: the app showed
+no active session while the notification had been counting for over 19 hours.
+
+The app also followed the device sensor and rotated into landscape, where the
+single-column screens have too little vertical space. Now locked to portrait —
+though Android 16 ignores that on large screens for targetSdk 36+, so tablets
+and unfolded foldables still rotate.
+
+### English (`en-US`)
+
+```
+What's new in 1.5.3
+
+• Fixed a notification that could keep counting after you stopped a session, even with nothing running.
+• The app now stays in portrait when you rotate your phone.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.5.3
+
+• Rättade en avisering som kunde fortsätta räkna efter att du avslutat ett arbetspass, trots att ingen tidsregistrering pågick.
+• Appen stannar nu i stående läge när du vrider på telefonen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.5.2 — session notification independent of the UI
 
 Internal release. The ongoing-session notification and the 12-hour reminder were
