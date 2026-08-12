@@ -13,6 +13,38 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.5.2 — session notification independent of the UI
+
+Internal release. The ongoing-session notification and the 12-hour reminder were
+scheduled inside TrackerViewModel, so they only ran while the Tracker screen was
+alive. They now live in a process-scoped notifier that follows the session
+itself. Groundwork for a home-screen widget, which would otherwise have been
+able to start a session while silently skipping both.
+
+No new functionality; the visible effect is a more dependable notification.
+
+### English (`en-US`)
+
+```
+What's new in 1.5.2
+
+• More reliable session notification — the ongoing notification and the long-session reminder no longer depend on the timer screen being open.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.5.2
+
+• Mer tillförlitlig avisering — den pågående aviseringen och påminnelsen om långa arbetspass beror inte längre på att Timer-skärmen är öppen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.5.1 — consistent card styling
 
 Follow-up to 1.5.0. The summary week cards used surfaceBright while the tracker
