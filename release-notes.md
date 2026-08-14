@@ -13,6 +13,53 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.5.4 — backups run when you asked
+
+The scheduled backup was arriving late, and on an upgraded install it kept
+arriving late no matter what the settings said.
+
+Two causes. The daily backup was a WorkManager PeriodicWorkRequest, whose flex
+interval defaults to the whole repeat interval — so a one-day period let the OS
+run the job anywhere inside those 24 hours, and the repeat interval being
+elapsed time rather than wall-clock meant every DST change slid it an hour
+further and nothing re-anchored it. Measured on a real device, a backup set for
+22:00 had settled at 22:52.
+
+The second cause is why the first fix was not enough on its own: the old
+periodic request survives an app update inside WorkManager's database, and the
+app start path keeps pending work rather than replacing it. So existing
+installs — everyone who actually had the problem — stayed on the old schedule.
+The new one-time chain now runs under its own work name and retires the old one.
+
+What remains is Doze: the same run landed at 22:07 rather than 22:00. That
+cannot be pinned without an exact alarm, which Play policy restricts to alarm
+clocks, calendars and timers, so the schedule dialog says the time is
+approximate instead of pretending otherwise.
+
+### English (`en-US`)
+
+```
+What's new in 1.5.4
+
+• Scheduled backups now run at the time you set, instead of drifting later and later.
+• The backup schedule now notes that the time is approximate — Android may delay a backup by a few minutes to save battery.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.5.4
+
+• Schemalagda säkerhetskopior körs nu vid tiden du valt, i stället för att glida allt senare.
+• Schemat visar nu att tiden är ungefärlig – Android kan fördröja en säkerhetskopia några minuter för att spara batteri.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.5.3 — stuck session notification, portrait lock
 
 Two fixes found while testing 1.5.2.
