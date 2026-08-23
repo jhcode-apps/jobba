@@ -13,6 +13,59 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.6.0 — settings you can scan, navigation that floats
+
+The shell rebuilt. Settings was an accordion of seven flat rows, one of which
+unfolded and pushed the rest down; nothing told you what a setting was set to
+until you opened it. Each section is a screen of its own now, reached from rows
+grouped into cards, and every row carries its current value underneath.
+
+The bottom bar became a pill floating over the content, naming only the tab you
+are on. Because it draws over rather than reserving space, every scrolling
+surface had to be taught to leave room for it — otherwise the last session of a
+day sits under it with nowhere to scroll.
+
+Underneath both, one card colour. Cards had drifted apart: the settings groups
+were white while sessions and weeks were a step off the light ramp, and the
+lunch row resolved to within 1.01:1 of the light background — not faint,
+absent. They now share a single role, the surface furthest from the ground in
+each theme, and the whole app reads at more contrast than before.
+
+One bug worth naming: no tab had ever been highlighted in a release build. The
+bar compared the route against a class name that R8 renames when it minifies,
+while the route kept the name baked in at compile time, so the comparison could
+never hold. Debug builds are not minified, which is why it survived this long.
+
+### English (`en-US`)
+
+```
+What's new in 1.6.0
+
+• Settings is now a list you can scan. Each section opens on its own screen and shows what it is set to.
+• The navigation bar floats above the content and names the tab you are on.
+• Cards stand off the background properly in both light and dark, and a day's hours line up in a column of their own.
+• Labels open straight into the list instead of behind a button.
+• Fixed: no tab was ever shown as selected.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.6.0
+
+• Inställningar är nu en lista att överblicka. Varje avsnitt öppnas på en egen skärm och visar vad det är inställt på.
+• Navigeringsraden svävar ovanför innehållet och visar vilken flik du är på.
+• Korten syns tydligt mot bakgrunden i både ljust och mörkt läge, och dagens timmar står i en egen kolumn.
+• Etiketter öppnas direkt i listan i stället för bakom en knapp.
+• Rättat: ingen flik visades som vald.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.5.4 — backups run when you asked
 
 The scheduled backup was arriving late, and on an upgraded install it kept
