@@ -60,7 +60,21 @@ Privacy policy: https://jhcode-apps.github.io/jobba/privacy-policy
 ## Screenshots
 
 Set in `assets/screenshots/` (teal theme, light mode, English/UK): phone (`01`–`05`),
-`tablet7/` (1200×1920), `tablet10/` (1600×2560). Most were captured on **1.1.x**;
-`02-summary.png` was recaptured on **1.2.0** and shows the note icon on the 08/07 day.
-Recapture in **light mode + English (UK country)** after any visual change — see the
-store-screenshots capture notes.
+`tablet7/` (1200×1920), `tablet10/` (1600×2560). All recaptured on **1.6.0**, the
+release that rebuilt the shell.
+
+Phone set: `01-tracker-running`, `02-summary`, `03-settings`, `04-hours`,
+`05-backup-settings`. `03` and `04` replace the old `03-day-settings` and
+`04-calendar-picker` — the settings rebuild is what 1.6.0 is about, so the list
+of cards and a section screen earn those slots.
+
+The tablet sets are captured on the phone with a display override, not on a
+tablet: `wm size 1200x1920` + `wm density 240`, and `wm size 1600x2560` +
+`wm density 320`. Both come out 800×1280 dp. Record `wm density` BEFORE
+overriding — Samsung's Screen zoom is itself a density override and `reset`
+wipes it.
+
+Recapture in **light mode + English (UK country)** after any visual change — see
+the store-screenshots capture notes. Give the app a few seconds after a restart
+before capturing the Summary: it can render one frame with default date
+formatting before the stored settings arrive.
