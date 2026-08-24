@@ -13,6 +13,49 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.6.1 — Jobba's own icon in the status bar
+
+The notifications had always borrowed Android's own menu artwork — a history
+clock for the running session, an info bubble for the long-session reminder, a
+floppy disk for the backup results — so the status bar identified the app as a
+generic clock. The notification shade looked right, because One UI draws the
+launcher icon there; only the tray gave it away.
+
+The new icon is the launcher stopwatch rebuilt rather than scaled. A small icon
+renders at roughly 13dp, not the 24 its canvas describes, so the mark's thin
+ring, its progress gap and its eight dissolving dashes each land on about three
+pixels: the dashes turn to grit and the gap reads as a hook. What survives is a
+closed ring with the play triangle solid inside it.
+
+The Hours settings also lost a description written before the setting it
+describes existed. Rounding said it applied to each day's total, which stopped
+being true when "Apply rounding to" was added and the increment could be put on
+each session instead.
+
+### English (`en-US`)
+
+```
+What's new in 1.6.1
+
+• The status bar now shows Jobba's own stopwatch while a session runs, instead of Android's generic clock. The backup and reminder notifications carry it too.
+• The Hours settings describe rounding correctly when it applies to each session rather than to the day, and the decimals setting now says it applies to the Tracker screen as well.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.6.1
+
+• Statusraden visar nu Jobbas eget tidtagarur medan ett arbetspass pågår, i stället för Androids allmänna klocka. Även aviseringar för säkerhetskopiering och påminnelser använder den.
+• Inställningarna för Timmar beskriver avrundningen rätt när den tillämpas på varje arbetspass i stället för på dagen, och decimalinställningen nämner nu att den även gäller Timer-skärmen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.6.0 — settings you can scan, navigation that floats
 
 The shell rebuilt. Settings was an accordion of seven flat rows, one of which
