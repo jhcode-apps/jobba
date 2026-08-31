@@ -13,6 +13,54 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.6.2 — the icon's trail, and a setting that stops vanishing
+
+1.6.1 gave the notifications an icon of their own, but a plain one: the launcher
+stopwatch's dissolving dashes had been dropped because they cannot be drawn at
+the size a status bar uses. One UI renders a small icon at about 13dp, not the
+24 its canvas describes, which leaves the ring some 89 pixels around — and the
+mark's dashes, 7 degrees down to 1, fall between 1.7 pixels and a quarter of
+one. Drawn literally they are grit.
+
+Width carries the trail instead. The ring is now a filled shape rather than a
+stroke, since a stroke cannot vary: a true circle outside, and an inner edge
+that climbs towards it so the ring thins away to a tip at 315 degrees. The
+notch left behind is where the dashes trail off in the full mark. The button on
+the right side of the stopwatch comes back too; the left one would sit where
+the ring has already ended and would read as a speck.
+
+The Hours settings also stopped hiding things. "Apply rounding to" used to
+disappear whenever rounding was Exact — it genuinely does nothing there, since
+there is no increment to apply — but a control that vanishes cannot say why,
+and its absence reads as a bug. It is now greyed out with the reason next to
+it, and Exact itself says that it means no rounding.
+
+### English (`en-US`)
+
+```
+What's new in 1.6.2
+
+• The status bar icon now carries the fading trail from Jobba's own icon, and the stopwatch button on its side.
+• Rounding now says "Exact (no rounding)" and explains what that means.
+• "Apply rounding to" no longer disappears when rounding is set to Exact. It is shown greyed out, with a note saying why it does not apply.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.6.2
+
+• Statusradens ikon har nu den uttonande svansen från Jobbas egen ikon, och knappen på tidtagarurets sida.
+• Avrundning heter nu "Exakt (ingen avrundning)" och förklarar vad det innebär.
+• "Avrunda på" försvinner inte längre när avrundningen är satt till Exakt. Den visas nedtonad, med en förklaring till varför den inte gäller.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.6.1 — Jobba's own icon in the status bar
 
 The notifications had always borrowed Android's own menu artwork — a history
