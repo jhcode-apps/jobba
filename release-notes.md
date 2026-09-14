@@ -13,6 +13,64 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.7.0 — one way to ask how hours are written
+
+The Tracker's clock counted 7:31:12 while every figure below it read 7.52, and
+nothing on screen said those were the same number. Hours can now be written
+either way. The choice sits in Hours as a single Format setting, and its options
+are the figures themselves — 7.5, 7.52, 7:31 — because a sample answers the
+question that "one decimal" only describes.
+
+It replaces two settings that were the same question asked twice. Decimals and
+the format were separate, which let a number of decimals be picked for a figure
+that prints none: a control with nothing left to do, explaining itself in a note.
+One picker leaves nothing to explain. A decimals choice made before this carries
+over, so an existing one-decimal user does not silently gain a decimal.
+
+The format reaches the exports too, since a column of hours and the total beneath
+it have to be written the same way. The CSV's duration heading follows the choice
+rather than claiming hours over a figure a spreadsheet would read as a time of
+day. The JSON backup is unchanged: its hours are a number for a machine.
+
+Lunch also stopped being deducted late in two places. The ongoing notification's
+chronometer counts from a baseline fixed when it is posted, so a deduct-after
+time only lands if something re-posts at that moment — and the only thing doing
+that was an in-process timer, which does not survive the app being killed or
+advance in deep sleep. The notification kept counting the pre-lunch total until
+the app was opened, overstating the day. It is now booked through work that
+persists across process death and reboot. The Tracker had the mirror of it:
+its first total was computed before the day's numbers arrived and corrected
+itself a tick later, which was invisible while the app stayed alive and the
+first thing on screen every time it was reopened.
+
+### English (`en-US`)
+
+```
+What's new in 1.7.0
+
+• Hours can be written as 7:31 now, as well as 7.5 or 7.52. One Format setting under Hours chooses between them, on screen and in CSV and Markdown exports.
+• It replaces the separate decimals setting. Your choice carries over.
+• The running notification no longer counts the pre-lunch total after your deduct-at time passes.
+• The Tracker no longer shows an inflated total when you reopen the app.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.7.0
+
+• Timmar kan nu skrivas som 7:31, lika väl som 7,5 eller 7,52. Inställningen Format under Timmar väljer mellan dem, på skärmen och i CSV- och Markdown-export.
+• Den ersätter den separata decimalinställningen. Ditt val följer med.
+• Den pågående aviseringen räknar inte längre totalen före lunch när tiden för lunchavdrag passerat.
+• Timer-vyn visar inte längre en uppblåst total när du öppnar appen igen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.6.2 — the icon's trail, and a setting that stops vanishing
 
 1.6.1 gave the notifications an icon of their own, but a plain one: the launcher
