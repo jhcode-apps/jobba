@@ -13,6 +13,58 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.8.0 — the break, where the hours are reported
+
+Lunch was deducted everywhere and shown nowhere. Every figure in the Summary —
+the Total card, each week, each day — is net of the break, and the deduction
+itself appeared in only one place: a single day in the Tracker. A month's worth
+of it had no number at all, unless labels happened to be in use, where it rode
+along at the foot of the per-label breakdown and vanished with it.
+
+The breakdown card now stands on its own. It leads with tracked time — clock-in
+to clock-out, the break still inside it — and opens on what that figure is made
+of: each label that carried hours, whatever carried none, and the lunch that
+comes off the lot. Tracked time less lunch is the Total above it, so the card
+can be read down like a ledger. It is named for tracking rather than work
+because the break is inside it; what gets reported as worked is what the lunch
+row leaves. With no labels it is the same card with nothing in between, which
+is the case that had no card at all before.
+
+The three stat cards also stopped sitting crooked. They asked for centred
+contents but their column was only as wide as the widest line in it, so the
+label ended up centred over the value rather than over the card: "Total" sat
+inset above 130.5h while "Days", whose label is the wider of the two, sat flush
+left. Nobody had noticed until a card with a left edge of its own was put
+directly beneath them.
+
+### English (`en-US`)
+
+```
+What's new in 1.8.0
+
+• The Summary now shows how much lunch was deducted across the whole period, not just for a single day. Open the Breakdown card to see it.
+• The card leads with your tracked time — clock-in to clock-out — and tracked time less lunch is the total above it.
+• It works with or without labels, and lists hours per label when you use them.
+• The Total, Avg and Days cards line up properly now.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.8.0
+
+• Översikten visar nu hur mycket lunch som dragits av för hela perioden, inte bara för en enskild dag. Öppna kortet Uppdelning för att se det.
+• Kortet börjar med din registrerade tid — från start till stopp — och registrerad tid minus lunch är totalen ovanför.
+• Det fungerar med eller utan etiketter, och listar timmar per etikett när du använder dem.
+• Korten Totalt, Snitt och Dagar ligger nu i linje.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.7.0 — one way to ask how hours are written
 
 The Tracker's clock counted 7:31:12 while every figure below it read 7.52, and
