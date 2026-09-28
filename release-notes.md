@@ -13,6 +13,38 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.8.1 — week totals that add up to their days
+
+A week card in the Summary could show a total a tenth off the days listed
+under it: 40.8h over days that summed to 40.7h. The figures were computed
+twice when the Summary opened — once with the default settings, before the
+stored ones had loaded, and once with the real ones — and whichever finished
+last was kept. When the default load won, every day was held to two decimals
+under a screen printing one, so each row rounded on its own while the week
+rounded their sum. A new load now cancels the one before it.
+
+### English (`en-US`)
+
+```
+What's new in 1.8.1
+
+• Fixed week totals in the Summary that could be a tenth of an hour off the days listed under them.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.8.1
+
+• Veckosummorna i översikten kunde skilja sig en tiondels timme från dagarna under dem. Det är nu åtgärdat.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.8.0 — the break, where the hours are reported
 
 Lunch was deducted everywhere and shown nowhere. Every figure in the Summary —
