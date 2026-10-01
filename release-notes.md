@@ -13,6 +13,47 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.9.0 — no time counted twice
+
+Nothing stopped two sessions from covering the same minutes, and every total
+adds up session lengths, so an overlap was counted twice — in the day, the
+week, the month, the label breakdown and the exports. The add/edit dialog now
+refuses a session that overlaps another, naming the one it collides with, and
+a session that starts or ends after now. The two go together: a running
+session's end is not known yet, so it is taken as now, and a session entered
+ahead of it would be run into later with nothing left to object. Stop is never
+refused.
+
+The Summary was also rebuilt to derive what it shows from its inputs rather
+than from loads that could finish out of order — the cause of 1.8.1's week
+totals. It now follows edits as they happen.
+
+### English (`en-US`)
+
+```
+What's new in 1.9.0
+
+• Sessions can no longer overlap. Adding or editing a session that shares time with another shows which one it collides with, so no time is counted twice.
+• Sessions can't be added in the future. A session you're in is one that's running.
+• The Summary updates as soon as you add or edit a session, and no longer flashes "No sessions" while it loads.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.9.0
+
+• Arbetspass kan inte längre överlappa. Om du lägger till eller ändrar ett arbetspass som delar tid med ett annat visas vilket det krockar med, så att ingen tid räknas två gånger.
+• Arbetspass kan inte läggas i framtiden. Ett arbetspass du är mitt i är ett som pågår.
+• Översikten uppdateras direkt när du lägger till eller ändrar ett arbetspass, och visar inte längre "Inga arbetspass" medan den laddar.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.8.1 — week totals that add up to their days
 
 A week card in the Summary could show a total a tenth off the days listed
