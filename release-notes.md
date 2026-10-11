@@ -13,6 +13,54 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.10.0 — the lunch, judged by each day
+
+With a lunch deducted from the start, the timer sat at zero for the first half
+hour looking stuck, and the notification counted up from a negative figure. The
+timer now dims and shows how much of the lunch is covered, and the notification
+says when the clock will start.
+
+The lunch "Apply at" time was one setting, read afresh for every day's figures,
+so changing it rewrote days already worked — in the Summary and in every later
+export — and a backup restored under a different setting gave different
+totals. Each day now stores its own time, given to it by its first session the
+way the lunch length already was, and editable in the day's lunch dialog.
+
+A lunch is now deducted only when a session runs through that time. A day that
+started after it took its lunch before work, and a timer stopped over lunch
+leaves the gap untracked already — both used to lose a lunch, so past totals
+for such days rise. Turning the default lunch off now also reaches a day with
+no sessions yet, and the CSV lunch column holds each day's deducted lunch once
+instead of repeating it on every session row.
+
+### English (`en-US`)
+
+```
+What's new in 1.10.0
+
+• While lunch is being worked off, the timer shows its progress instead of standing still at zero.
+• Each day keeps its own lunch time, so changing it in Settings no longer alters past days. Change a single day in its lunch settings.
+• Lunch is only deducted when a session runs through lunch time, so afternoon-only days keep their hours. Some past totals may rise.
+• CSV export lists lunch once per day.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.10.0
+
+• Medan lunchen arbetas in visar timern hur långt den kommit i stället för att stå på noll.
+• Varje dag har sin egen lunchtid, så en ändring i Inställningar påverkar inte tidigare dagar. Ändra en dag i dess lunchinställningar.
+• Lunch dras bara av när ett arbetspass pågår över lunchtiden, så dagar med bara eftermiddag behåller sina timmar. Vissa äldre summor kan öka.
+• CSV-exporten visar lunchen en gång per dag.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.9.0 — no time counted twice
 
 Nothing stopped two sessions from covering the same minutes, and every total
