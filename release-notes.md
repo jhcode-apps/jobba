@@ -27,7 +27,8 @@ and counted towards neither month's total. Restoring a backup is now one
 transaction and never brings back a running session; export, import and backup
 show file errors instead of crashing; a damaged settings file is reset rather
 than crashing every launch. Holiday lists for Denmark, the UK and the US are
-corrected.
+corrected. Tapping the Summary's month opens a month-and-year picker, so another
+year is no longer a swipe per month away.
 
 ### English (`en-US`)
 
@@ -35,9 +36,9 @@ corrected.
 What's new in 1.11.0
 
 • A week split across two months is shown whole in the Summary.
-• Sessions can run past midnight: add or edit one that ends the next day. The timer says which day a running session started on.
-• A session running past midnight keeps its lunch deducted.
-• Corrected holidays for Denmark, the UK and the US.
+• Tap the month in the Summary to jump to any month and year.
+• Sessions can end the next day: add or edit one past midnight. It keeps its lunch, and the timer says which day it started.
+• Holiday fixes for Denmark, the UK and the US.
 • A backup restores fully or not at all, and file errors no longer crash the app.
 
 Thanks for testing! Please report anything that looks off.
@@ -49,8 +50,8 @@ Thanks for testing! Please report anything that looks off.
 Nyheter i 1.11.0
 
 • En vecka som delas av två månader visas hel i Översikten.
-• Arbetspass kan gå över midnatt: lägg till eller ändra ett som slutar nästa dag. Timern visar vilken dag ett pågående arbetspass startade.
-• Ett arbetspass över midnatt behåller sitt lunchavdrag.
+• Tryck på månaden i Översikten för att välja månad och år.
+• Arbetspass kan sluta nästa dag: lägg till eller ändra ett över midnatt. Lunchen dras av som vanligt och timern visar vilken dag det startade.
 • Rättade helgdagar för Danmark, Storbritannien och USA.
 • En säkerhetskopia återställs helt eller inte alls, och filfel kraschar inte längre appen.
 
