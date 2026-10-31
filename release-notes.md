@@ -13,6 +13,52 @@ Swedish glossary: use *registrera* / *tidsregistrering* (not *spåra*) and
 
 ---
 
+## 1.11.0 — past midnight, and the month's edges
+
+A session that ran past midnight could not be added or edited — its end landed
+before its start — and its lunch was handed back at midnight in the Tracker and
+the notification while the Summary went on deducting it. The dialog now takes
+an end earlier than the start as the next day, the overlap check covers the
+days either side, and the Tracker names the day a running session started on,
+since past midnight the page on screen is no longer the day the timer counts.
+
+A week split across two months is listed whole, its other month's days dimmed
+and counted towards neither month's total. Restoring a backup is now one
+transaction and never brings back a running session; export, import and backup
+show file errors instead of crashing; a damaged settings file is reset rather
+than crashing every launch. Holiday lists for Denmark, the UK and the US are
+corrected.
+
+### English (`en-US`)
+
+```
+What's new in 1.11.0
+
+• A week split across two months is shown whole in the Summary.
+• Sessions can run past midnight: add or edit one that ends the next day. The timer says which day a running session started on.
+• A session running past midnight keeps its lunch deducted.
+• Corrected holidays for Denmark, the UK and the US.
+• A backup restores fully or not at all, and file errors no longer crash the app.
+
+Thanks for testing! Please report anything that looks off.
+```
+
+### Swedish (`sv-SE`)
+
+```
+Nyheter i 1.11.0
+
+• En vecka som delas av två månader visas hel i Översikten.
+• Arbetspass kan gå över midnatt: lägg till eller ändra ett som slutar nästa dag. Timern visar vilken dag ett pågående arbetspass startade.
+• Ett arbetspass över midnatt behåller sitt lunchavdrag.
+• Rättade helgdagar för Danmark, Storbritannien och USA.
+• En säkerhetskopia återställs helt eller inte alls, och filfel kraschar inte längre appen.
+
+Tack för att du testar! Rapportera gärna om något ser fel ut.
+```
+
+---
+
 ## 1.10.0 — the lunch, judged by each day
 
 With a lunch deducted from the start, the timer sat at zero for the first half
